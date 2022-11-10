@@ -9,20 +9,33 @@
 const invitatiEmailList = ["invitato1@festa.it", "invitato2@festa.it", "invitato3@festa.it", "invitato4@festa.it", "invitato5@festa.it"];
 
 // creo il prompt per far inserire all'user la sua email
-let emailUser = prompt("Inserisci la tua email, così controlleremo se fai parte degli invitati");
+const emailUser = prompt("Inserisci la tua email, così controlleremo se fai parte degli invitati");
+
+// creo la variabile per confermare la presenza dell'email all'interno della lista
+let seiPresente;
 
 // creo il ciclo per controllare la presenza dell'email inserita dall'user nella lista degli invitati
 
 for (let i = 0; i < invitatiEmailList.length; i ++) {
 
-    if (emailUser == invitatiEmailList[i]) {
+    if (emailUser === invitatiEmailList[i]) {
 
-        console.log("Fai parte degli invitati alla festa.");
+        seiPresente = 1;
 
-    } else if (emailUser != invitatiEmailList[i]) {
+    } else {
 
-        console.log("Non fai parte degli invitati alla festa.");
+        seiPresente = 0;
 
     }
+
+}
+
+if (seiPresente = 1) {
+
+    console.log("Fai parte degli invitati alla festa.");
+
+} else if (seiPresente = 0) {
+
+    console.log("Non fai parte degli invitati alla festa.");
 
 }
