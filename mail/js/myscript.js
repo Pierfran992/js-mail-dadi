@@ -30,11 +30,11 @@ for (let i = 0; i < invitatiEmailList.length; i ++) {
 
 }
 
-if (seiPresente = 1) {
+if (seiPresente == 1) {
 
     console.log("Fai parte degli invitati alla festa.");
 
-} else if (seiPresente = 0) {
+} else if (seiPresente == 0) {
 
     console.log("Non fai parte degli invitati alla festa.");
 
