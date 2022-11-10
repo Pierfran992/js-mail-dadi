@@ -17,11 +17,11 @@ console.log("Il numero del pc " + numPc);
 // imposto le condizioni di vittoria
 if ( numUser < numPc ) {
 
-    console.log("il " + numPc + " è maggiore di " + numUser + " ,Vince il pc!");
+    console.log("il " + numPc + " è maggiore di " + numUser + " Vince il pc!");
 
 } else if ( numUser > numPc ) {
 
-    console.log("il " + numUser + " è maggiore di " + numPc + " ,Hai Vinto!");
+    console.log("il " + numUser + " è maggiore di " + numPc + " Hai Vinto!");
 
 } else if ( numUser == numPc ) {
 
