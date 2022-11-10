@@ -3,10 +3,8 @@
 // controlla che sia nella lista di chi può accedere,
 // stampa un messaggio appropriato sull’esito del controllo.
 
-
-
 // creo un array contenente l'email dei soggetti invitati
-const invitatiEmailList = ["invitato1@festa.it", "invitato2@festa.it", "invitato3@festa.it", "invitato4@festa.it", "invitato5@festa.it"];
+const invitatiEmailList = ["invitato1@festa.it", "invitato2@festa.it", "invitato3@festa.it", "invitato4@festa.it", "invitato5@festa.it", "invitato6@festa.it"];
 
 // creo il prompt per far inserire all'user la sua email
 const emailUser = prompt("Inserisci la tua email, così controlleremo se fai parte degli invitati");
@@ -22,7 +20,7 @@ for (let i = 0; i < invitatiEmailList.length; i ++) {
 
         seiPresente = 1;
 
-    } else {
+    } else if (emailUser !== invitatiEmailList[i]) {
 
         seiPresente = 0;
 
