@@ -18,21 +18,21 @@ for (let i = 0; i < invitatiEmailList.length; i ++) {
 
     if (emailUser === invitatiEmailList[i]) {
 
-        seiPresente = 1;
+        seiPresente = true;
 
     } else if (emailUser !== invitatiEmailList[i]) {
 
-        seiPresente = 0;
+        seiPresente = false;
 
     }
 
 }
 
-if (seiPresente == 1) {
+if (seiPresente == true) {
 
     console.log("Fai parte degli invitati alla festa.");
 
-} else if (seiPresente == 0) {
+} else if (seiPresente == false) {
 
     console.log("Non fai parte degli invitati alla festa.");
 
